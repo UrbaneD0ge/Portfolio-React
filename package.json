@@ -1,0 +1,28 @@
+{
+  "name": "Portfolio-React",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://urbaned0ge.github.io/Portfolio-React",
+  "dependencies": {
+    "create-react-app": "^4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UrbaneD0ge/Portfolio-React.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UrbaneD0ge/Portfolio-React/issues"
+  }
+}
