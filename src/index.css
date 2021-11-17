@@ -1,13 +1,190 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* declare theme colors as vars */
+:root {
+  --skyblue: rgb(146, 204, 205);
+  --slategray: rgb(49, 52, 61);
+  --powderblue: rgb(61, 74, 112);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  color: var(--powderblue);
+  background-color: whitesmoke;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif, Helvetica, sans-serif;
+}
+
+header {
+  background-color: var(--skyblue);
+  color: var(--slategray);
+  padding-left: 6vw;
+  float: left;
+}
+
+/* my name */
+h1 {
+  position: relative;
+  font-size: 3rem;
+  right: 30px;
+  margin: 0;
+}
+
+/* section headings */
+h2 {
+  font-size: 4vh;
+  color: var(--powderblue);
+  position: relative;
+  right: 10vw;
+  border-right: solid;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+/* card titles */
+h3 {
+  font-size: 4vh;
+  color: var(--powderblue);
+  background-color: var(--skyblue);
+  position: absolute;
+  bottom: 6vh;
+  left: 1vw;
+}
+
+h4 {
+  font-size: 3vh;
+  background-color: var(--skyblue);
+  position: absolute;
+  bottom: 0;
+  left: 1vw;
+}
+
+/* descriptive text */
+p {
+  font-size: 3vh;
+  color: var(--powderblue);
+  position: relative;
+  line-height: 1.2em;
+}
+
+/* nav links */
+nav a {
+  color: var(--skyblue);
+}
+
+li {
+  margin: 0 2vw;
+  font-size: larger;
+}
+
+/* nav bar  */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--slategray);
+  color: var(--skyblue);
+  height: 13vh;
+  width: 100vw;
+}
+
+nav ul {
+  background-color: var(--slategray);
+  font-size: larger;
+  padding: 8px;
+  list-style: none;
+}
+
+/* contains page elements on white background */
+main {
+  display: flex;
+  align-self: end;
+  align-items: flex-end;
+  flex-direction: column;
+  object-fit: contain;
+  width: 85vw;
+  flex-wrap: wrap;
+  padding: 2vw;
+}
+
+section {
+  padding: 0 0 0 10vw;
+  margin: 5vh 5vw;
+  display: flex;
+}
+
+.main {
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  padding: 0;
+  /* display: flex; */
+  width: 50%;
+}
+
+.work {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.work img {
+  border: var(--skyblue);
+  border-style: solid;
+  border-width: 5px;
+  align-items: flex-start;
+  opacity: 0.5;
+  transition-duration: 1s;
+  }
+
+.work a {
+  color: var(--slategray);
+}
+
+.work img:hover {
+  opacity: 100%;
+}
+
+.small {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.ContactMe {
+  position: relative;
+}
+
+#cover {
+  background-size: cover;
+  width: 100vw;
+}
+
+#hero {
+  width: 100%;
+}
+
+#ContactMe {
+  display: flex;
+  color: var(--slategray);
+  justify-content: space-evenly;
+  list-style: none;
+  align-self: center;
+}
+
+@media screen and (max-width: 720px) {
+  .small {
+    width: 100%;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+  nav {
+    height: 20vmin;
+  }
+  #ContactMe {
+    flex-direction: column;
+    line-height: 1.2em;
+  }
 }
