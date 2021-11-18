@@ -118,6 +118,7 @@ section {
 .card {
   position: relative;
   padding: 0;
+  /* margin-right: 5px; */
   /* display: flex; */
   width: 50%;
 }
