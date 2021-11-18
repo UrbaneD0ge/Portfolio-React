@@ -3,7 +3,7 @@ function Work() {
         <main>
             <section id="Work" class="work">
                 <h2>Work</h2>
-                <div class="main">
+                <div class="card">
                     <a href="https://urbaned0ge.github.io/Musical-Time-Machine/" target="_blank" rel="noreferrer"><img src="./MTM.png" alt="Project1" id="hero"/></a>
                     <h3><a href="https://github.com/UrbaneD0ge/Musical-Time-Machine" target="_blank" rel="noreferrer">The MUSICAL Time Machine</a></h3>
                     <h4>Multiple API calls take you back in time to find popular music of the day...</h4>

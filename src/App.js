@@ -1,10 +1,22 @@
 import './App.css';
 import AboutMe from './components/aboutMe';
-import Work from './components/work';
+import Work from './components/Work';
 import { useState } from 'react';
 
 function App() {
-  const [currentSection, getCurrentSection] = useState(AboutMe);
+  const [currentSection, setCurrentSection] = useState('AboutMe');
+
+  const renderPage = () => {
+    if (currentSection === 'AboutMe') {
+      return <AboutMe />;
+    }
+    if (currentSection === 'Work') {
+      return <Work />;
+    }
+    // if (currentSection === 'ContactMe') {
+    //   return <ContactMe />;
+    // }
+  }
 
   return (
     <body className="App">
@@ -13,14 +25,13 @@ function App() {
               <h1>Kipling C. Dunlap</h1>
           </header>
           <ul class="right">
-              <li><a href="#AboutMe">About Me</a></li>
-              <li><a href="#Work">Work</a></li>
-              <li><a href="#ContactMe">Contact Me</a></li>
-              <li><a href="https://docs.google.com/document/d/1vkpMSKmEacOYjhZEVyZuvSriz0JI9MmWvxPNrwSwGog/edit?usp=sharing" target="_blank" rel="noreferrer">Resume</a></li>
+              <li><button className="btn" onClick={() => {setCurrentSection('AboutMe')}}>About Me</button></li>
+              <li><button className="btn" onClick={() => {setCurrentSection('Work')}}>Work</button></li>
+              <li><a className="btn" href="https://docs.google.com/document/d/1vkpMSKmEacOYjhZEVyZuvSriz0JI9MmWvxPNrwSwGog/edit?usp=sharing" target="_blank" rel="noreferrer">Resume</a></li>
         </ul>
       </nav>
       <img src="./assets/simit cover.jpg" alt="cover" id="cover"/>
-      <getCurrentSection currentSection={AboutMe} getCurrentSection={getCurrentSection} />
+      {renderPage()}
     </body>
   );
 }
