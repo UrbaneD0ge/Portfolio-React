@@ -27,7 +27,7 @@ function App() {
               <li><a className="btn" href="https://docs.google.com/document/d/1vkpMSKmEacOYjhZEVyZuvSriz0JI9MmWvxPNrwSwGog/edit?usp=sharing" target="_blank" rel="noreferrer">Resume</a></li>
         </ul>
       </nav>
-      <img src="./assets/simit cover.jpg" alt="cover" id="cover"/>
+      <img src="https://i.ibb.co/tJB56MY/simit-cover.jpg" alt="cover" id="cover"/>
       {renderPage()}
     </div>
   );
