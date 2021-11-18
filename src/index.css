@@ -113,6 +113,7 @@ section {
 .main {
   position: relative;
   padding: 0;
+  min-height: 50vh;
 }
 
 .card {
@@ -121,6 +122,7 @@ section {
   /* margin-right: 5px; */
   /* display: flex; */
   width: 50%;
+  min-height: 50vh;
 }
 
 .work {

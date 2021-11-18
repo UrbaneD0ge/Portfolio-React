@@ -13,18 +13,15 @@ function App() {
     if (currentSection === 'Work') {
       return <Work />;
     }
-    // if (currentSection === 'ContactMe') {
-    //   return <ContactMe />;
-    // }
   }
 
   return (
-    <body className="App">
+    <div className="App">
       <nav>
           <header>
               <h1>Kipling C. Dunlap</h1>
           </header>
-          <ul class="right">
+          <ul className="right">
               <li><button className="btn" onClick={() => {setCurrentSection('AboutMe')}}>About Me</button></li>
               <li><button className="btn" onClick={() => {setCurrentSection('Work')}}>Work</button></li>
               <li><a className="btn" href="https://docs.google.com/document/d/1vkpMSKmEacOYjhZEVyZuvSriz0JI9MmWvxPNrwSwGog/edit?usp=sharing" target="_blank" rel="noreferrer">Resume</a></li>
@@ -32,7 +29,7 @@ function App() {
       </nav>
       <img src="./assets/simit cover.jpg" alt="cover" id="cover"/>
       {renderPage()}
-    </body>
+    </div>
   );
 }
 
